@@ -19,12 +19,12 @@ const lifeController = require("./Controller/lifestyle.controller")
 
 app.use("/", redmiController);
 app.use("/", xiaomiController);
-app.use("/poco", pocoController);
-app.use("/mitv", mitvController);
-app.use("/audio", audioController);
-app.use("/power", powerController);
-app.use("/smart", xiaomiController);
-app.use("/life", lifeController);
+app.use("/", pocoController);
+app.use("/", mitvController);
+app.use("/", audioController);
+app.use("/", powerController);
+app.use("/", xiaomiController);
+app.use("/", lifeController);
 
 
 app.listen(PORT, async()=>{
