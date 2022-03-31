@@ -9,7 +9,9 @@ const connect = require("./configs/db");
 const PORT = process.env.PORT;
 
 const redmiController = require("./controller/redmi.controller");
+const xiaomiController = require("./controller/xiaomi.controller")
 app.use("/", redmiController);
+app.use("/", xiaomiController);
 
 app.listen(PORT, async()=>{
     try{
