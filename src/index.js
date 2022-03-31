@@ -10,21 +10,9 @@ const PORT = process.env.PORT;
 
 const redmiController = require("./controller/redmi.controller")
 const xiaomiController = require("./controller/xiaomi.controller")
-const pocoController = require("./Controller/poco.controller")
-const mitvController = require("./Controller/mitv.controller")
-const audioController = require("./Controller/audio.controller")
-const powerController = require("./Controller/powerbanks.controller")
-const smartController = require("./Controller/smartdevice.controller")
-const lifeController = require("./Controller/lifestyle.controller")
 
 app.use("/", redmiController);
 app.use("/", xiaomiController);
-app.use("/", pocoController);
-app.use("/", mitvController);
-app.use("/", audioController);
-app.use("/", powerController);
-app.use("/", xiaomiController);
-app.use("/", lifeController);
 
 
 app.listen(PORT, async()=>{
