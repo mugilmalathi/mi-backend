@@ -14,6 +14,9 @@ const emailController = require("./controller/email.controller")
 const pocoController = require("./controller/poco.controller")
 const mitvController = require("./controller/mitv.controller")
 const audioController = require("./controller/audio.controller")
+const powerController = require("./controller/powerbank.controller")
+const lifeController = require("./controller/lifestyle.controller")
+const smartController = require("./controller/smartdevice.controller")
 
 app.use("/", redmiController);
 app.use("/", xiaomiController);
@@ -21,6 +24,9 @@ app.use("/", emailController);
 app.use("/", pocoController);
 app.use("/", mitvController);
 app.use("/", audioController);
+app.use("/", powerController);
+app.use("/", lifeController);
+app.use("/", smartController);
 
 
 
