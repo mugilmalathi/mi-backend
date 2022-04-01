@@ -10,9 +10,11 @@ const PORT = process.env.PORT;
 
 const redmiController = require("./controller/redmi.controller")
 const xiaomiController = require("./controller/xiaomi.controller")
+const emailController = require("./controller/email.controller")
 
 app.use("/", redmiController);
 app.use("/", xiaomiController);
+app.use("/", emailController)
 
 
 
