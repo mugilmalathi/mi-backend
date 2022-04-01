@@ -13,12 +13,14 @@ const xiaomiController = require("./controller/xiaomi.controller")
 const emailController = require("./controller/email.controller")
 const pocoController = require("./controller/poco.controller")
 const mitvController = require("./controller/mitv.controller")
+const audioController = require("./controller/audio.controller")
 
 app.use("/", redmiController);
 app.use("/", xiaomiController);
 app.use("/", emailController);
 app.use("/", pocoController);
 app.use("/", mitvController);
+app.use("/", audioController);
 
 
 
