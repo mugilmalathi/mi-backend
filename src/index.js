@@ -17,7 +17,6 @@ const audioController = require("./controller/audio.controller")
 const powerController = require("./controller/powerbank.controller")
 const lifeController = require("./controller/lifestyle.controller")
 const smartController = require("./controller/smartdevice.controller")
-const flatController = require("./controller/flat.controller")
 
 app.use("/", redmiController);
 app.use("/", xiaomiController);
@@ -28,7 +27,6 @@ app.use("/", audioController);
 app.use("/", powerController);
 app.use("/", lifeController);
 app.use("/", smartController);
-app.use("/", flatController);
 
 
 
